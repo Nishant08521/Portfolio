@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nishant portfolio</title>
+    <link rel="shortcut icon" href="./assets/UniversalUpscaler_702867b4-bfc8-4466-b64e-bd5193d133e1.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- use typed js liberary -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <nav id="desktop-nav">
+      <div class="logo">Nishant</div>
+      <div>
+        <i
+          class="fa-solid fa-moon"
+          style="color: #7d44a8; font-size: 2rem; cursor: pointer"
+          id="mode"
+        ></i>
+      </div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+     <!-- mobile navbar  -->
+      <nav id="hamburger-nav">
+       
+        <div class="hamburger-menu">
+          <div>
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+    </nav>
+  
+   
+    
+    <!-- Homepage section -->
+    
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/UniversalUpscaler_702867b4-bfc8-4466-b64e-bd5193d133e1.jpg"
+          alt="nishant profile picture"
+          class="photo"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nishant Kumar</h1>
+        <p class="section__text__p2"><span class="auto-type"></span></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/nishant-singh-a6934624b/"
+            ><i class="fa-brands fa-linkedin fa-beat"></i
+          ></a>
+
+          <a href="https://github.com/Nishant08521"><i class="fa-brands fa-github fa-shake"></i></a>
+          <a href="https://x.com/Nishant18404452"><i class="fa-brands fa-x-twitter fa-bounce"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- About section  -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="https://plus.unsplash.com/premium_vector-1682305328047-593605010095?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i
+                class="fa-sharp fa-solid fa-laptop-code"
+                style="color: #7d44a8; font-size: 2rem"
+              ></i>
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <i class="fa-solid fa-people-line" style="color: #7d44a8"></i>
+              <h3>Education</h3>
+              <p>BCA Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a Frontend Developer who empathetically creates accessible,
+              engaging, functional, and aesthetically pleasing websites. I took
+              the initiative to learn to do it myself, and my love of coding
+              bloomed. I enjoy creating websites… selecting the perfect colors,
+              layouts, and images, to using clean and efficient code that
+              conveys the most satisfying, effective, and visually appealing
+              experiences for users. With backgrounds in law and e-commerce, I
+              appreciate details, meeting deadlines, clear communication, and
+              making businesses’ visions come to life. Apart from technology,
+              mountains, starry sky and sunsets are things which fascinate me
+              the most.
+              <a href="#contact" style="color: blue">get in touch!</a> <br>
+              interest:
+              <span
+                class="auto-type2"
+                style="color: rgb(125, 68, 168); font-size: 1.5rem"
+              ></span>
+            </p>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+    <!-- Experience Section -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title"> Skills Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <i
+                  class="fa-brands fa-html5 fa-beat-fade"
+                  style="font-size: 2.5rem; color: #e44d1d"
+                ></i>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i
+                  class="fa-brands fa-css3-alt fa-beat-fade"
+                  style="font-size: 2.5rem; color: #264de4"
+                ></i>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i
+                  class="fa-brands fa-figma fa-beat-fade"
+                  style="font-size: 2.5rem; color: #264de4"
+                ></i>
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i
+                  class="fa-brands fa-js fa-beat-fade"
+                  style="font-size: 2.5rem; color: rgb(255, 222, 36)"
+                ></i>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-bootstrap fa-beat-fade "
+                style="font-size: 2.5rem; color: rgb(97,46,170);"></i>
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i
+                  class="fa-brands fa-beat-fade"
+                  
+                > <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNhoXisDruJMDAq3Ltd-wuaMW2lGxck9wAKw&s"
+                alt="Experience icon"
+                class="icon"
+              />
+              </i>
+               
+                <div>
+                  <h3>Tailwind </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <i
+                  class="fa-brands fa-react fa-beat-fade"
+                  style="font-size: 2.5rem; color: #264de4"
+                ></i>
+                <div>
+                  <h3>React </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+               
+  
+<i class="fa-brands fa-node fa-beat-fade" style="color: #099f72; font-size: 2.5rem;"></i>
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-m fa-beat-fade" style="color: #0b5fef; font-size: 2.5rem;"></i>
+                <div>
+                  <h3>Framer <br> Motion</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i
+                  class="fa-brands fa-square-git fa-beat-fade"
+                  style="font-size: 2.5rem; color: #264de4"
+                ></i>
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <!-- Project section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Restaura.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Restaura </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nishant08521/restaura'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://restaura-zeta.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/todo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TODO</h2>
+         
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nishant08521/Todo-react'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://todo-react-one-eosin.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Screenshot 2024-08-21 132521.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">C L A Y - Blog</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nishant08521/React-router'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://react-router-rho-sand.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfRzk5mNEpRmBdrOFnTgdlWMLypZaxNCbhvg&s"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sundown-studio</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nishant08521/sundown.studio'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=' https://nishant08521.github.io/sundown.studio/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <!-- Contact section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i
+            class="fa-solid fa-envelope fa-beat"
+            style="color: #74c0fc; font-size: 2.5rem; cursor: pointer"
+          ></i>
+
+          <p>
+            <a href="mailto:nishantkumarsingh0852@gmail.com"
+              >nishantkumarsingh<br />0852@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <a href="https://www.linkedin.com/in/nishant-singh-a6934624b/"
+            ><i class="fa-brands fa-linkedin fa-beat"></i
+          ></a>
+
+          <p>
+            <a href="https://www.linkedin.com/in/nishant-singh-a6934624b/">
+              LinkedIn</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-brands  fa-beat">
+          <a aria-label="Chat on WhatsApp" href="https://wa.me/917667084784">
+            <img
+              alt="Chat on WhatsApp"
+              src="./assets/WhatsAppButtonGreenLarge.png"
+              style="width: 140px; cursor: pointer; height: 40px"
+            />
+          </a>
+          </i
+            >
+        </div>
+      </div>
+    </section>
+
+
+  
+
+    <!-- footer section -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p style="margin: 1rem 1rem;">Copyright &#169; 2024 Nishant kumar singh </p>
+  
+    </footer>
+ 
+  
+    <script src="script.js" defer></script>
+  </body>
+</html>
